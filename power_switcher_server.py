@@ -24,3 +24,11 @@ def light_off():
         return {"message": "power off successed"}
     except:
         return {"message": "power off failed"}
+
+@app.get("/status")
+def light_status():
+    try:
+        status = GPIO.input(GPIO_PIN)
+        return {"status": status}
+    except:
+        return {"message": "status failed"}

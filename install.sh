@@ -5,3 +5,4 @@ systemctl daemon-reload
 
 systemctl enable power_switcher_server.service
 systemctl start power_switcher_server.service
+systemctl restart power_switcher_server.service
