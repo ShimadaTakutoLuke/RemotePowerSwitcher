@@ -12,4 +12,6 @@ $ sudo bash install.sh
 ### 電源を入れる
 GET [端末IPアドレス]:8000/on
 ### 電源を落とす
-GET [端末IPアドレス]:8000/on
+GET [端末IPアドレス]:8000/off
+### 現在の状況を確認
+GET [端末IPアドレス]:8000/status
